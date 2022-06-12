@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <title>Placar</title>
+</head>
+<body>
+    <h1>Squad Tech DRO</h1>
+    
+    <div id="container" class="container">
+        <div class="contador">
+            <h2>Placar</h2>
+            <div class="placar">
+                <div class="placar-casa">
+                    <p>Casa</p>
+                    <div class="casa">
+                        <button name="subtrair" onclick="decrement_casa()">-</button>
+                        <span id="currentNumber">0</span>
+                        <button name="adicionar" onclick="increment_casa()">+</button>
+                    </div>
+                </div>
+                <div class="placar-fora">
+                    <p>Fora</p>
+                    <div class="fora">
+                        <button name="subtrair" onclick="decrement_fora()">-</button>
+                        <span id="currentNumber2">0</span>
+                        <button name="adicionar" onclick="increment_fora()">+</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cronometro">
+            <h2>Cronometro</h2>
+            <form name="form_main">
+            <div class="relogio">
+              <span id="hour">00</span>:<span id="minute">00</span>:<span id="second">00</span>:<span id="millisecond">000</span>
+            </div>
+            <br/>
+            <div class="botoes">
+                <button type="button" name="start">start</button>
+                <button type="button" name="pause">pause</button>
+                <button type="button" name="reset">reset</button>
+            </div>
+            </form>
+        </div>
+    </div>
+    <script src="assets/js/contador.js"></script>
+    <script src="assets/js/cronometro.js"></script>
+</body>
+</html>
